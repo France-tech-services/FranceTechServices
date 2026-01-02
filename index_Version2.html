@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>France Tech Services — Assistance administrative pour sinistres</title>
+  <meta name="description" content="France Tech Services accompagne les entreprises du bâtiment et les prestataires sinistre dans la saisie de devis, la facturation et la gestion des extranets assureurs (Repartim, Domus...). Gagnez du temps et sécurisez vos paiements." />
+  <meta property="og:title" content="France Tech Services" />
+  <meta property="og:description" content="Assistance administrative dédiée aux professionnels du sinistre — devis, facturation, extranets assureurs." />
+  <meta property="og:url" content="https://France-Tech-Services.fr" />
+  <meta name="theme-color" content="#0b5d4b" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="France Tech Services">
+        <img src="assets/logo.png" alt="France Tech Services logo" class="logo" />
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+      <nav class="nav" id="site-nav" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#avantages">Avantages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Assistance administrative dédiée aux professionnels du sinistre</h1>
+        <p class="lead">
+          France Tech Services accompagne les entreprises du bâtiment et les prestataires sinistre dans la saisie de devis, la facturation et la gestion des extranets assureurs (Repartim, Domus, ...).
+        </p>
+        <p>👉 Gagnez du temps, sécurisez vos paiements et concentrez-vous sur vos chantiers.</p>
+        <div class="ctas">
+          <a class="btn primary" href="#contact">Demander un devis</a>
+          <a class="btn outline" href="#services">Nos services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2>Ce que nous faisons</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Saisie de devis</h3>
+          <p>Rédaction et saisie rapide de devis conformes aux attentes des assureurs pour accélérer les acceptations.</p>
+        </article>
+        <article class="card">
+          <h3>Facturation & suivi</h3>
+          <p>Emission, relance et sécurisation des paiements pour vous libérer de la gestion administrative.</p>
+        </article>
+        <article class="card">
+          <h3>Gestion d'extranets assureurs</h3>
+          <p>Administration et saisie sur Repartim, Domus et autres plateformes — conformité et suivi complet.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="avantages" class="section alt container">
+      <h2>Pourquoi choisir France Tech Services ?</h2>
+      <ul class="benefits">
+        <li>Gain de productivité — moins d'administration, plus de chantier</li>
+        <li>Sécurisation des paiements et des factures</li>
+        <li>Connaissance des extranets assureurs et des process sinistres</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact & demande de devis</h2>
+      <p>Remplis le formulaire ci-dessous pour obtenir un devis ou nous poser des questions. Nous répondons généralement sous 24–48h.</p>
+
+      <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+        <!-- Remplace action par ton endpoint Formspree ou Netlify Forms. -->
+        <div class="form-row">
+          <label for="name">Nom / Entreprise</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="phone">Téléphone (optionnel)</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+        <div class="form-row">
+          <label for="message">Message / Détails du sinistre</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="Nouvelle demande — France Tech Services" />
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Envoyer</button>
+          <a class="btn outline" href="mailto:contact@france-tech-services.fr">Ou utilisez votre mail</a>
+        </div>
+        <p class="form-note">Remarque : remplace l'attribut action par ton identifiant Formspree/Netlify ou configure un script côté serveur.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>France Tech Services</strong><br />
+        Assistance administrative pour sinistres<br />
+        Email: <a href="mailto:contact@france-tech-services.fr">contact@france-tech-services.fr</a>
+      </div>
+      <div>
+        <small>© <span id="year"></span> France Tech Services — Tous droits réservés.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
