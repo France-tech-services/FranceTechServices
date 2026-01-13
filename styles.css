@@ -67,3 +67,88 @@ input,textarea{padding:.6rem .7rem;border:1px solid #e6eeea;border-radius:8px;fo
   .header-inner{position:relative}
   .footer-inner{flex-direction:column;align-items:flex-start}
 }
+.hero-modern{
+  background:
+    radial-gradient(1200px 400px at 10% -10%, rgba(11,93,75,0.15), transparent),
+    radial-gradient(800px 400px at 90% 10%, rgba(15,122,96,0.12), transparent),
+    linear-gradient(180deg,#ffffff 0%, #f0faf6 100%);
+  padding:5rem 0 4rem;
+}
+
+.hero-content{
+  max-width:720px;
+}
+
+.hero h1{
+  font-weight:800;
+  letter-spacing:-0.02em;
+  line-height:1.1;
+}
+
+.hero-sub{
+  margin-top:.75rem;
+  font-weight:600;
+  color:var(--accent-2);
+}
+
+.hero-proof{
+  margin-top:1.25rem;
+  font-size:.9rem;
+  color:var(--muted);
+}
+.btn.primary{
+  background:linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow:0 8px 20px rgba(11,93,75,0.25);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.btn.primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 28px rgba(11,93,75,0.35);
+}
+
+.btn.outline{
+  border:1px solid rgba(11,93,75,0.25);
+  background:rgba(11,93,75,0.03);
+}
+.card{
+  position:relative;
+  overflow:hidden;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg, transparent, rgba(11,93,75,0.06), transparent);
+  opacity:0;
+  transition:.3s;
+}
+
+.card:hover::before{
+  opacity:1;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(15,23,42,0.08);
+}
+.section h2{
+  font-size:clamp(1.4rem, 3vw, 2rem);
+  letter-spacing:-0.02em;
+}
+
+.section-intro{
+  max-width:600px;
+  color:var(--muted);
+}
+input:focus, textarea:focus{
+  outline:none;
+  border-color:var(--accent-2);
+  box-shadow:0 0 0 3px rgba(15,122,96,0.12);
+}
+
+form{
+  background:linear-gradient(180deg,#ffffff,#f9fffb);
+}
