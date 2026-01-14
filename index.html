@@ -162,35 +162,54 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section container">
-  <h2>Demande de devis</h2>
-  <p>
-    Décrivez votre activité et vos besoins administratifs.
-    Nous vous proposerons une solution adaptée à votre organisation.
-  </p>
+ <section id="contact" class="section container">
+      <h2>Contact & demande de devis</h2>
+      <p>
+          Décrivez-nous votre activité et votre volume de dossiers.
+          Nous vous proposerons une solution adaptée pour vous faire gagner du temps et de l’argent.
+      </p>
+      <p><strong>📩 Réponse sous 24h — Devis gratuit, sans engagement.</strong></p>
 
-  <form>
-    <div class="form-row">
-      <label>Nom / Entreprise</label>
-      <input type="text">
-    </div>
-    <div class="form-row">
-      <label>Email</label>
-      <input type="email">
-    </div>
-    <div class="form-row">
-      <label>Message</label>
-      <textarea rows="5"></textarea>
-    </div>
-    <button class="btn primary">Envoyer</button>
-  </form>
-</section>
+      <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+        <div class="form-row">
+          <label for="name">Nom / Entreprise</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="phone">Téléphone (optionnel)</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+        <div class="form-row">
+          <label for="message">Message / Détails du sinistre</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="Nouvelle demande — France Tech Services" />
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Envoyer</button>
+          <a class="btn outline" href="mailto:contact@france-tech-services.fr">Ou utilisez votre mail</a>
+        </div>
+        <p class="form-note">Remarque : remplace l'attribut action par ton identifiant Formspree/Netlify ou configure un script côté serveur.</p>
+      </form>
+    </section>
+  </main>
 
-<footer class="site-footer">
-  <div class="container">
-    France Tech Services — Cabinet administratif pour le sinistre
-  </div>
-</footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <img src="assets/logo.png" alt="France Tech Services logo" class="logo" /> <strong>France Tech Services</strong><br /> 
+        Assistance administrative pour sinistres<br />
+        Email: <a href="mailto:contact@france-tech-services.fr">contact@france-tech-services.fr</a>
+      </div>
+      <div>
+        <small>© <span id="year"></span> France Tech Services — Tous droits réservés.</small>
+      </div>
+    </div>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
