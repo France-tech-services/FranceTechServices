@@ -202,3 +202,41 @@ form{
     grid-template-columns:1fr;
   }
 }
+.hero-cabinet{background:linear-gradient(180deg,#f3f6f8,#fff);}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;}
+.hero-image img{width:100%;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,0.15);}
+
+.process-grid,.cabinet-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;}
+.process img,.cabinet img{width:100%;border-radius:12px;box-shadow:0 16px 32px rgba(0,0,0,0.12);}
+
+.hero-sub{color:#0f7a60;font-weight:600;margin-top:.5rem;}
+
+@media(max-width:900px){
+.hero-grid,.process-grid,.cabinet-grid{grid-template-columns:1fr;}
+}
+.faq-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;
+  margin-top:1.5rem;
+}
+
+.faq-item{
+  background:#fff;
+  padding:1.5rem;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(15,23,42,0.06);
+  border-left:4px solid var(--accent);
+}
+
+.faq-item h3{
+  margin-top:0;
+  font-size:1.05rem;
+  color:var(--accent);
+}
+
+.faq-item p{
+  color:#334155;
+  font-size:.95rem;
+  margin-bottom:0;
+}
