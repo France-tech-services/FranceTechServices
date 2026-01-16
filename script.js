@@ -12,3 +12,5 @@ document.addEventListener('DOMContentLoaded', function(){
   var yearSpan = document.getElementById('year');
   if(yearSpan) yearSpan.textContent = new Date().getFullYear();
 });
+// JS volontairement léger
+console.log("France Tech Services – site chargé");
